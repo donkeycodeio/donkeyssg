@@ -23,7 +23,7 @@ var params = {
 
 var generateMenu = ()=>{
     page_menu=[]
-    glob(source_dir+"/pages/**.md",  (err, files)=> {
+    glob(source_dir+"/**.md",  (err, files)=> {
         files.forEach((file)=>{
 
             const file_name = path.basename(file).replace('.md','');
@@ -70,7 +70,7 @@ var generatePage = (file)=>{
 const refresh = () =>{
     fse.emptyDir(output_dir, err => {
         if (err) return console.error(err)
-            glob(source_dir+"/pages/**.md", (er, files)=> {
+            glob(source_dir+"/**.md", (er, files)=> {
                 files.forEach((file)=>{
                     generatePage(file)
                 });
