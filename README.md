@@ -5,7 +5,7 @@ This is the demo code of the tutorial [DonkeyCode](https://donkeycode.io/tutoria
 
 ## How to
 
-Just clone the repository, install all the needed package with yarn install and 
+Just clone the repository, install all the needed package with yarn and enjoy the generator.
 
 ```
 git clone https://github.com/donkeycodeio/donkeyssg.git
